@@ -9,7 +9,7 @@ A Python data analysis project that explores real World Bank data on the economi
 | Item | Details |
 |---|---|
 | **Project Title** | Exploratory Data Analysis of Global Economic Indicators |
-| **Industry Name** | [Add your industry name] |
+| **Industry Name** | Economics & Global Development |
 | **Dataset** | World Development Indicators (WDI) extract |
 | **Coverage** | 20 countries, 52 indicators, 2016-2025 |
 
@@ -17,7 +17,7 @@ A Python data analysis project that explores real World Bank data on the economi
 
 ## Problem Statement
 
-[Add your real-world / industry problem statement here]
+Economic data for many countries is published as large, messy indicator tables. Without cleaning and analysis, it is hard to see how economies grow, how they react to shocks such as COVID-19, and how income relates to inflation and health.
 
 ---
 
@@ -63,8 +63,8 @@ The project cleans the World Bank data, reshapes it into an analysis-ready table
 
 | Stage | What was done |
 |---|---|
-| **Industry Selection** | [Add the industry you selected] |
-| **Problem Identification** | [Add the problem you identified] |
+| **Industry Selection** | Selected Economics & Global Development, using World Bank indicators for 20 countries |
+| **Problem Identification** | Raw economic data is messy and hard to read, so economic performance, COVID-19 impact and income differences are hard to see |
 | **Dataset Collection** | Downloaded the World Development Indicators extract from World Bank DataBank |
 | **Data Cleaning** | Removed 5 footer/blank rows; converted the text `..` into real missing values; converted the year columns from text to numbers; renamed columns; checked for duplicates (none found) |
 | **Data Transformation** | Reshaped the data from wide to long format (10,400 rows); built a country-year table of 16 selected indicators (200 rows); grouped GDP growth into categories with `pd.cut`; grouped countries into Lower / Middle / Upper income tiers with `pd.qcut` |
